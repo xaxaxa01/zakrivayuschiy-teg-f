@@ -13,5 +13,11 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  /* font-family: var(--Inter), san */
+  font-family: var(--Inter), sans-serif;
+  font-variation-settings: var(--main-font-weight);
+  background-image: var(--background-gradient);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
