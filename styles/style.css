@@ -21,3 +21,28 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.header {
+  background-color: #fff;
+  width: var(--content-width);
+  margin-inline: auto;
+  border: 2px solid #000;
+  margin-block-start: 100px;
+  min-height: var(--header-height);
+  padding-inline: var(--header-padding-inline);
+  padding-block: var(--header-padding-block);
+  text-align: center;
+  font-family: var(--PressStart2P);
+}
+
+.header__title {
+  font-size: var(--logo-font-size);
+  font-weight: 400;
+}
+
+.header__subtitle {
+  font-size: var(--subtitle-font-size);
+  text-transform: uppercase;
+  margin-block-start: 20px;
+  font-weight: 400;
+}

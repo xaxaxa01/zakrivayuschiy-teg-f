@@ -23,4 +23,13 @@
       #e7e7e7 0.01%,
       #1a1a1a 100%
     );
+
+    --content-width: clamp(375px, 49vw, 1440px);
+    --header-height: clamp(327px, 30vw, 368px);
+
+    --logo-font-size: clamp(49px, 4.5vw, 65px);
+    --subtitle-font-size: clamp(14px, 2.1vw, 23px);
+
+    --header-padding-block: clamp(122px, 9vw, 130px);
+    --header-padding-inline: clamp(16px, 8vw, 122.5px);
 }
