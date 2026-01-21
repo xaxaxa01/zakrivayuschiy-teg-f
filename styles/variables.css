@@ -24,16 +24,20 @@
       #1a1a1a 100%
     );
 
-    --content-width: clamp(375px, 48.5vw, 1440px);
-    --header-height: clamp(327px, 30vw, 368px);
+    --content-width: clamp(372px, 48.7vw, 696px);
+    --header-height: clamp(327px, 26vw, 368px);
+    --dialog-width: clamp(341px, 26vw, 353px);
 
-    --logo-font-size: clamp(49px, 4.5vw, 65px);
-    --subtitle-font-size: clamp(14px, 2.1vw, 23px);
+    --logo-font-size: clamp(49px, 4.6vw, 65px);
+    --subtitle-font-size: clamp(14px, 1.6vw, 23px);
 
-    --header-padding-block: clamp(122px, 9vw, 130px);
-    --header-padding-inline: clamp(16px, 8vw, 122.5px);
+    --header-padding-block: clamp(122px, 9.1vw, 130px);
+    --header-padding-inline: clamp(16px, 8.6vw, 122.5px);
 
     --main-font-size: 18px;
 
     --text-stroke-color: rgba(255, 255, 255);
+    --background-color: #fff;
+    --block-border: 2px solid #000;
+    --dialog-background-color: rgba(0, 0, 0, 0.6);
 }
