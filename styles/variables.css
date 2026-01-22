@@ -38,6 +38,7 @@
 
     --text-stroke-color: rgba(255, 255, 255);
     --background-color: #fff;
+
     --text-color: #fff;
     --accent-color: #000;
     --block-border: 2px solid var(--accent-color);
@@ -45,4 +46,6 @@
 
     --contour-color: #000;
     --animation-fill-color: #ff0000;
+    --block-border: 2px solid #000;
+    --dialog-background-color: rgba(0, 0, 0, 0.6);
 }

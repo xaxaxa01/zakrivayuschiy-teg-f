@@ -158,6 +158,12 @@
   transform: translateX(0);
 }
 
+.button {
+  background-color: var(--background-color);
+  border: var(--block-border);
+  cursor: pointer;
+}
+
 .card__icon-button {
   display: flex;
   align-items: center;
@@ -241,6 +247,7 @@
 
 .sparks {
   opacity: 0;
+  border: none;
 }
 
 .card__like-button {
@@ -296,6 +303,7 @@ dialog::backdrop {
   flex-direction: column;
   padding: 0;
   align-items: center;
+
 }
 
 .dialog__content{
@@ -345,6 +353,7 @@ dialog::backdrop {
     padding: 11px 116px;
     margin: 0 30px 30px 30px;
   }
+ 
 
 }
 
