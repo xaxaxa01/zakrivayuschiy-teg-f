@@ -77,6 +77,7 @@
   position: relative;
   display: block;
   width: 100%;
+  overflow: hidden;
 }
 
 .content__card-image {
@@ -84,10 +85,12 @@
   outline: var(--block-border);
   aspect-ratio: 1/1;
   width: 100%;
+  object-fit: cover;
 }
 
  .image-wrapper__label {
   position: absolute;
+  z-index: 1;
   top: 25px;
   right: 27px;
   font-family: var(--PressStart2P), sans-serif;
@@ -104,6 +107,38 @@
     text-stroke: 1px var(--text-stroke-color);
     text-shadow: none;
   }
+}
+
+.grayscale-filter {
+  filter: grayscale(100%);
+}
+
+.warm-vintage-filter {
+  filter: sepia(60%) contrast(120%) brightness(105%) saturate(120%);
+}
+
+.cold-evening-filter {
+  filter: grayscale(30%) brightness(120%) contrast(110%);
+}
+
+.bright-summer-filter {
+  filter: saturate(180%) brightness(115%) contrast(130%);
+}
+
+.retro-film-filter {
+  filter: sepia(80%) contrast(140%) brightness(95%) grayscale(20%);
+}
+
+.soft-focus-filter {
+  filter: blur(2px) brightness(110%) saturate(120%);
+}
+
+.pop-art-filter {
+  filter: saturate(200%) contrast(150%) hue-rotate(90deg);
+}
+
+.smoky-vintage-filter  {
+  filter: sepia(50%) contrast(110%) brightness(95%) blur(1px);
 }
 
 .content__card-text {
