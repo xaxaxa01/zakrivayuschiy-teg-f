@@ -200,12 +200,6 @@
   transform: translateX(0);
 }
 
-.button {
-  background-color: var(--background-color);
-  border: var(--block-border);
-  cursor: pointer;
-}
-
 .card__icon-button {
   display: flex;
   align-items: center;
