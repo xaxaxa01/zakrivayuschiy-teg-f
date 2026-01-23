@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--Inter), sans-serif;
-  font-variation-settings: 'wght' var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   background-image: var(--background-gradient);
   background-position: center;
   background-size: cover;
@@ -69,7 +69,7 @@
 .content__card-title {
   padding: 6px 10px 6px 10px;
   font-weight: var(--title-font-weight);
-  font-variation-settings: 'wght' var(--title-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   font-size: var(--main-font-size);
 }
 
@@ -88,7 +88,7 @@
   object-fit: cover;
 }
 
- .image-wrapper__label {
+.image-wrapper__label {
   position: absolute;
   z-index: 1;
   top: 25px;
@@ -98,10 +98,17 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   font-weight: 400;
-  text-shadow: -1px 0 var(--text-stroke-color), 1px 0 var(--text-stroke-color), 0 -1px var(--text-stroke-color), 0  1px var(--text-stroke-color);
-} 
+  text-shadow:
+    -1px 0 var(--text-stroke-color),
+    1px 0 var(--text-stroke-color),
+    0 -1px var(--text-stroke-color),
+    0 1px var(--text-stroke-color);
+}
 
-@supports ((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--text-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--text-stroke-color))
+) {
   .image-wrapper__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     text-stroke: 1px var(--text-stroke-color);
@@ -137,7 +144,7 @@
   filter: saturate(200%) contrast(150%) hue-rotate(90deg);
 }
 
-.smoky-vintage-filter  {
+.smoky-vintage-filter {
   filter: sepia(50%) contrast(110%) brightness(95%) blur(1px);
 }
 
@@ -176,7 +183,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);;
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .button::before {
@@ -326,7 +333,7 @@ dialog {
 dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
-} 
+}
 
 dialog::backdrop {
   background-color: var(--dialog-background-color);
@@ -334,14 +341,13 @@ dialog::backdrop {
 
 .dialog-window {
   width: var(--dialog-width);
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 0;
   align-items: center;
-
 }
 
-.dialog__content{
+.dialog__content {
   display: flex;
   flex-direction: row;
   gap: 18px;
@@ -380,7 +386,7 @@ dialog::backdrop {
     height: 28px;
   }
 
-  .dialog__content{
+  .dialog__content {
     margin-inline-start: 40px;
   }
 
@@ -388,8 +394,4 @@ dialog::backdrop {
     padding: 11px 116px;
     margin: 0 30px 30px 30px;
   }
- 
-
 }
-
-

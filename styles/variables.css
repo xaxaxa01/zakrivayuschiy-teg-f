@@ -1,51 +1,38 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --PressStart2P: 'PressStart2P';
-    --Inter: 'Inter';
+  --PressStart2P: "PressStart2P";
+  --Inter: "Inter";
 
-    --main-font-weight: 410;
-    --title-font-weight: 715;
+  --main-font-weight: 410;
+  --title-font-weight: 715;
 
-    --background-gradient: 
-    repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      180deg,
-      #e7e7e7 0%,
-      #e7e7e7 0.01%,
-      #1a1a1a 100%
-    );
+  --background-gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
-    --content-width: clamp(372px, 48.7vw, 696px);
-    --header-height: clamp(327px, 26vw, 368px);
-    --dialog-width: clamp(341px, 26vw, 353px);
+  --content-width: clamp(372px, 48.7vw, 696px);
+  --header-height: clamp(327px, 26vw, 368px);
+  --dialog-width: clamp(341px, 26vw, 353px);
 
-    --logo-font-size: clamp(49px, 4.6vw, 65px);
-    --subtitle-font-size: clamp(14px, 1.6vw, 23px);
+  --logo-font-size: clamp(49px, 4.6vw, 65px);
+  --subtitle-font-size: clamp(14px, 1.6vw, 23px);
 
-    --header-padding-block: clamp(122px, 9.1vw, 130px);
-    --header-padding-inline: clamp(16px, 8.6vw, 122.5px);
+  --header-padding-block: clamp(122px, 9.1vw, 130px);
+  --header-padding-inline: clamp(16px, 8.6vw, 122.5px);
 
-    --main-font-size: 18px;
+  --main-font-size: 18px;
 
-    --text-stroke-color: rgba(255, 255, 255);
-    --background-color: #fff;
+  --text-stroke-color: rgba(255, 255, 255);
+  --background-color: #fff;
 
-    --text-color: #fff;
-    --accent-color: #000;
-    --block-border: 2px solid var(--accent-color);
-    --dialog-background-color: rgba(0, 0, 0, 0.6);
+  --text-color: #fff;
+  --accent-color: #000;
+  --block-border: 2px solid var(--accent-color);
+  --dialog-background-color: rgba(0, 0, 0, 0.6);
 
-    --contour-color: #000;
-    --animation-fill-color: #ff0000;
-    --block-border: 2px solid #000;
-    --dialog-background-color: rgba(0, 0, 0, 0.6);
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --block-border: 2px solid #000;
+  --dialog-background-color: rgba(0, 0, 0, 0.6);
 }
