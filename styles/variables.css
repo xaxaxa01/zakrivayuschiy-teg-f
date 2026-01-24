@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --PressStart2P: "PressStart2P";
-  --Inter: "Inter";
+  --accent-font: "PressStart2P";
+  --main-font: "Inter";
 
   --main-font-weight: 410;
   --title-font-weight: 715;
@@ -12,7 +12,6 @@
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --content-width: clamp(372px, 48.7vw, 696px);
-  --header-height: clamp(327px, 26vw, 368px);
   --dialog-width: clamp(341px, 26vw, 353px);
 
   --logo-font-size: clamp(49px, 4.6vw, 65px);
@@ -29,10 +28,8 @@
   --text-color: #fff;
   --accent-color: #000;
   --block-border: 2px solid var(--accent-color);
-  --dialog-background-color: rgba(0, 0, 0, 0.6);
+  --dialog-background-color: rgba(0, 0, 0, 0.75);
 
   --contour-color: #000;
   --animation-fill-color: #ff0000;
-  --block-border: 2px solid #000;
-  --dialog-background-color: rgba(0, 0, 0, 0.6);
 }

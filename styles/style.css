@@ -13,12 +13,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--Inter), sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
   background-image: var(--background-gradient);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -30,7 +31,7 @@
   margin-block-start: 100px;
   padding-inline: var(--header-padding-inline);
   padding-block: var(--header-padding-block);
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -78,14 +79,15 @@
   display: block;
   width: 100%;
   overflow: hidden;
+  outline: var(--block-border);
 }
 
 .content__card-image {
   display: block;
-  outline: var(--block-border);
   aspect-ratio: 1/1;
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .image-wrapper__label {
@@ -93,7 +95,7 @@
   z-index: 1;
   top: 25px;
   right: 27px;
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -152,7 +154,7 @@
   margin-block: 27px;
   margin-inline: 25px;
   font-size: var(--main-font-size);
-  line-height: 21px;
+  line-height: 1.17;
 }
 
 .content__card-feedback {
@@ -292,13 +294,17 @@
 }
 
 .button__text {
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   vertical-align: middle;
   position: relative;
   color: var(--text-color);
   z-index: 1;
   mix-blend-mode: difference;
+}
+
+.button__decorated-text {
+  text-transform: uppercase;
 }
 
 .save__button {
@@ -322,6 +328,7 @@ dialog {
   display: grid;
   position: fixed;
   inset: 0;
+  overflow-x: hidden;
 }
 
 dialog:not([open]) {
@@ -362,7 +369,7 @@ dialog::backdrop {
 
 .dialog__title {
   font-size: 14px;
-  font-family: var(--PressStart2P), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   line-height: 150%;
   font-weight: 400;
