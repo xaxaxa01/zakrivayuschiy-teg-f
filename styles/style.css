@@ -150,15 +150,17 @@
   filter: sepia(50%) contrast(110%) brightness(95%) blur(1px);
 }
 
-.content__card-text {
+.content__card-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   margin-block: 27px;
   margin-inline: 25px;
-  font-size: var(--main-font-size);
-  line-height: 1.17;
 }
 
-.content__card-feedback {
-  margin-top: 25px;
+.content__card-text {
+  font-size: var(--main-font-size);
+  line-height: 1.17;
 }
 
 .card__button {
@@ -328,7 +330,6 @@ dialog {
   display: grid;
   position: fixed;
   inset: 0;
-  overflow-x: hidden;
 }
 
 dialog:not([open]) {
@@ -341,24 +342,26 @@ dialog::backdrop {
 }
 
 .dialog-window {
-  width: var(--dialog-width);
   display: flex;
   flex-direction: column;
-  padding: 0;
+  gap: 30px;
+  width: var(--dialog-width);
   align-items: center;
+  padding: 30px;
 }
 
 .dialog__content {
   display: flex;
   flex-direction: row;
   gap: 18px;
-  margin: 28px;
   align-items: center;
 }
 
 .dialog__button {
-  padding: 9px 128px;
-  margin: 0 30px 30px 30px;
+  width: 100%;
+  font-family: var(--PressStart2P), sans-serif;
+  text-transform: uppercase;
+  height: 39px;
 }
 
 .dialog__floppy-icon {
@@ -387,12 +390,8 @@ dialog::backdrop {
     height: 28px;
   }
 
-  .dialog__content {
-    margin-inline-start: 40px;
-  }
-
-  .dialog__button {
-    padding: 11px 116px;
-    margin: 0 30px 30px 30px;
+  .dialog-window {
+    padding: 30px 39px;
+    margin-inline: 17px;
   }
 }
